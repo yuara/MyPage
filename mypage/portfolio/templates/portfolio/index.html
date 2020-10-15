@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="{% url 'portfolio:copy' %}">Home</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -197,7 +197,7 @@
                 <h4 class="skill-name">Scrapy</h4>
                 <div class="level">Intermediate, 1 years</div>
                 <div class="desc">
-                  Scrapy is a web crawling and scraping Python framework. I've been working with Scrapy for a year and created databases in the internship. I also integrated the regular scrapying function into my flask project with scrapyd and cron.
+                  Scrapy is a web crawling and scraping Python framework. I've been working with Scrapy for a year and created databases in the internship. I also made a regular scrapying function with scrapyd and cron and celery and redis, then integrated it into my django project.
                 </div>
               </div>
               <!--//item-inner-->
@@ -220,9 +220,48 @@
             <div class="item col-xs-12 col-sm-4">
               <div class="item-inner">
                 <h4 class="skill-name">Django</h4>
-                <div class="level">Biginner, 1 month</div>
+                <div class="level">Intermediate, 6 month</div>
                 <div class="desc">
                   Django is a Python-based web framework. I've done with tutorials on <a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/">the official website</a> and <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/">Udemy</a>. Based on these experiences, I'm working on a project now.
+                </div>
+              </div>
+              <!--//item-inner-->
+            </div>
+            <!--//item-->
+          </div>
+          <!--//row-->
+
+          <h3 class="subtitle text-center">
+            <i class="fab fa-python fa-fw"></i><a href="https://clothesmanager.herokuapp.com">ClothesManager</a></h3>
+          <div class="row">
+            <div class="item col-xs-12 col-sm-4">
+              <div class="item-inner">
+                <h4 class="skill-name">Celery and Redis</h4>
+                <div class="level">Biginner, 3 months</div>
+                <div class="desc">
+                  Celery is a task queue/job queue and Redis is in-memory data structure store. I used Celery as a worker for Django project and Redis as its broker. Those work for Scrapy to scrape data synchronously in my project.
+                </div>
+              </div>
+              <!--//item-inner-->
+            </div>
+            <!--//item-->
+            <div class="item col-xs-12 col-sm-4">
+              <div class="item-inner">
+                <h4 class="skill-name">Docker</h4>
+                <div class="level">Intermediate, 6 months</div>
+                <div class="desc">
+                  Docker is a tool designed to make it easier to build applications based on containers. I've made dockerfiles and built containers for Celery, Redis, Elasticsearch, Nginx, Scrapyd, some databases and so on.
+                </div>
+              </div>
+              <!--//item-inner-->
+            </div>
+            <!--//item-->
+            <div class="item col-xs-12 col-sm-4">
+              <div class="item-inner">
+                <h4 class="skill-name">Heroku</h4>
+                <div class="level">Biginner, 1 month</div>
+                <div class="desc">
+                  Heroku is a container-based cloud Platform as a Service (PaaS). I deploy my project, ClothesManager, on it using heroku.yaml for Docker containers I build.
                 </div>
               </div>
               <!--//item-inner-->
@@ -236,10 +275,18 @@
         <div class="other-skills text-center">
           <h3 class="subtitle">Other Skills</h3>
           <div class="misc-skills">
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">MYSQL</span>
+            <span class="skill-tag">RQ</span>
+            <span class="skill-tag">Elasticsearch</span>
+            <span class="skill-tag">Nginx</span>
             <span class="skill-tag">Git</span>
+
+            <br>
+
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">MYSQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+
 
             <br>
 
@@ -247,6 +294,8 @@
             <span class="skill-tag">CSS3</span>
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">Java</span>
+
           </div>
         </div>
         <!--//other-skills-->
@@ -313,19 +362,18 @@
                 </h3>
                 <div class="card-text">
                   <div class="meta">
-                    ClothesManager is a web application with Flask.<br>
+                    ClothesManager is a web application with Django.<br>
                     This app gets information about the weather from a forecast website and suggests clothes that are suitable for the weather. The clothes are from what you register. You only make today's outfit by the suggestion and can save outfits on ClothesManager.
                     <br><br>
                     <div class="tech">
                       <u>
                         Technology:
                         <ul>
-                          <li>Python</li>
-                          <li>Flask</li>
+                          <li>Django</li>
                           <li>Scrapy</li>
-                          <li>Elasticsearch</li>
-                          <li>RQ</li>
-                          <li>MySQL</li>
+                          <li>Celery</li>
+                          <li>Redis</li>
+                          <li>PostgreSQL</li>
                           <li>Docker</li>
                         </ul>
                       </u>
@@ -335,12 +383,13 @@
                 <!-- card-text -->
               </div>
               <!-- content -->
-              <a class="link-mask" href="https://github.com/yuara/ClothesManager"></a>
+              <a class="link-mask" href="https://clothesmanager.herokuapp.com/"></a>
             </div>
             <!-- card-body -->
             <div class="card-footer">
               <small class="text-muted">
-                <a href="https://github.com/yuara/ClothesManager">Github</a>
+                <a href="https://clothesmanager.herokuapp.com/">Heroku App</a>
+                <a href="https://github.com/yuara/ClothesManager_Django">Github</a>
               </small>
             </div>
           </div>
@@ -358,7 +407,7 @@
         <div class="intro">
           <img class="profile-image" src="{% static 'images/yu1.JPG' %}" alt="Mehul's profile image">
           <div class="dialog">
-            <p>I'm currently working on my own project. I'm always open to new opportunities that let me work as much as I can on other projects.</p>
+            <p>I'm currently working on my own project. I always open to new opportunities that let me work as much as I can on other projects.</p>
             <p>
               <strong>I can work with the following:</strong>
             </p>
@@ -368,7 +417,7 @@
               <li>
                 Web Crawling and Scraping with Scrapy/Python</li>
               <li>
-                Making Databases of MongoDB and MySQL</li>
+                Making and designing Databases</li>
               <li>
                 Connecting MongoDB to a cloud service, MongoDB Atlas</li>
               <li>
@@ -381,12 +430,12 @@
             </p>
             <ul class="social list-inline">
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/yu-arakawa-066a55185/">
+                <a href="https://www.linkedin.com/in/yu-arakawa-066a55185/" target="_blank">
                   <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/yuara">
+                <a href="https://github.com/yuara" target="_blank">
                   <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
               </li>
@@ -396,7 +445,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="mailto:yu.arakawa112@gmail.com">
+                <a href="mailto:yu.arakawa112@gmail.com" target="_blank">
                   <i class="far fa-envelope" aria-hidden="true"></i>
                 </a>
               </li>
@@ -416,7 +465,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Yu Arakawa</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Yu Arakawa 2020</p>
       </div>
       <!-- /.container -->
     </footer>
