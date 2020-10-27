@@ -92,7 +92,7 @@
             </div>
             <div class="job-meta">
               <div class="row">
-                <div class="title col-lg-8">Internship</div>
+                <div class="title col-lg-8"> Internship</div>
                 <div class="time col-lg-4">August, 2019 - January, 2020</div>
               </div>
             </div>
@@ -124,7 +124,7 @@
           <!-- <div class="col-lg-8 mx-auto"> -->
           <div class="section-title">Education</div>
           <div class="row">
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h3 class="degree">Master Degree in Physics Engineering</h3>
                 <div class="education-body"><br>
@@ -142,7 +142,7 @@
             </div>
             <!--//item-->
 
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h3 class="degree">Bachelor Degree in Physics Engineering</h3>
                 <div class="education-body"><br>
@@ -160,7 +160,7 @@
             </div>
             <!--//item-->
 
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h3 class="degree" style="padding-bottom:  28px;">High School Degree</h3>
                 <div class="education-body"><br>
@@ -192,7 +192,7 @@
           <h3 class="subtitle text-center">
             <i class="fab fa-python fa-fw"></i>Python</h3>
           <div class="row">
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Scrapy</h4>
                 <div class="level">Intermediate, 1 years</div>
@@ -203,7 +203,7 @@
               <!--//item-inner-->
             </div>
             <!--//item-->
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Flask</h4>
                 <div class="level">Intermediate, 4 months</div>
@@ -217,7 +217,7 @@
               <!--//item-inner-->
             </div>
             <!--//item-->
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Django</h4>
                 <div class="level">Intermediate, 6 month</div>
@@ -235,7 +235,7 @@
             <i class="fas fa-tshirt"></i> <a href="https://clothesmanager.herokuapp.com" class="text-reset">ClothesManager</a><p class="lead pt-2">I created this app with Django and Scrapy and some tech below as well.</p></h3>
 
           <div class="row">
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Celery and Redis</h4>
                 <div class="level">Biginner, 3 months</div>
@@ -246,7 +246,7 @@
               <!--//item-inner-->
             </div>
             <!--//item-->
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Docker</h4>
                 <div class="level">Intermediate, 6 months</div>
@@ -257,12 +257,12 @@
               <!--//item-inner-->
             </div>
             <!--//item-->
-            <div class="item col-xs-12 col-sm-4">
+            <div class="item col-lg-12 col-xl-4">
               <div class="item-inner">
                 <h4 class="skill-name">Heroku</h4>
                 <div class="level">Biginner, 1 month</div>
                 <div class="desc">
-                  Heroku is a container-based cloud Platform as a Service (PaaS). I deploy my project, ClothesManager, on it using heroku.yaml for Docker containers I build.
+                  Heroku is a container-based cloud Platform as a Service (PaaS). I deploy my project, ClothesManager, on it using heroku.yaml for Docker containers I built.
                 </div>
               </div>
               <!--//item-inner-->
@@ -310,6 +310,8 @@
       <section id="portfolio" class="portfolio-section">
         <h2 class="section-title">Projects</h2>
         <div class="card-deck cardbox">
+          <div class="row">
+            <div class="col-lg-12 col-xl-6">
           <div class="card">
             <figure class="pic-box">
               <img class="img-responsive" src="{% static 'images/portfolio/search_recipes.png' %}" alt="search_recipes" width="100%" height="auto">
@@ -351,7 +353,10 @@
             </div>
           </div>
           <!-- card -->
+          </div>
+          <!-- col -->
 
+          <div class="col-lg-12 col-xl-6">
           <div class="card">
             <figure class="pic-box">
               <img class="img-responsive" src="{% static 'images/portfolio/ClothesManager_top.png' %}" alt="Clothes Manager img" width="100%" height="auto">
@@ -396,9 +401,14 @@
             </div>
           </div>
           <!-- card -->
+        </div>
+        <!-- col -->
 
         </div>
+        <!-- row -->
+        </div>
         <!-- card-deck -->
+
       </section>
       <!-- project section -->
     </div>
